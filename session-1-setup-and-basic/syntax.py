@@ -41,6 +41,7 @@ print(score_str)
 # Bool - Boolean
 is_active = True
 is_logged_in = False
+is_expired = True
 
 print(is_active and is_logged_in)
 print(False and False)
@@ -66,7 +67,7 @@ b = 3
 addition = a + b # 13
 substraction = a - b #7
 mutilply = a * b # 30
-division = a/ b 
+division = a / b 
 floor_division = a // b
 print(division)
 print(floor_division)
@@ -138,7 +139,7 @@ else:
 my_str = ''
 num = 0
 
-# Falsy Value: False, None, "", [], {}, set(), 0
+# Falsy Value: False, None, "", [], {}, set(), tuple(), 0
 if num == 0:
     print('truthy')
 else:
@@ -162,7 +163,7 @@ for sport in sports:
     print(sport)
 
 
-for i, sport in enumerate(sports):
+for i, sport in enumerate(sports): # [index, value]
     print(f"sport: {sport} at {i}")
 
 

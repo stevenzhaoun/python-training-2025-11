@@ -29,7 +29,7 @@ class Note(SQLModel, table=True):
     content: str
     user_id: int = Field(foreign_key='users.id', index=True)
     created_at: datetime = Field(default=datetime.now())
-    udpated_at: datetime = Field(default=datetime.now())
+    updated_at: datetime = Field(default=datetime.now())
 
     user: User = Relationship(back_populates='notes')
     

@@ -18,7 +18,7 @@ class NoteResponse(Notebase):
     id: int
     user_id: int
     created_at: datetime
-    udpated_at: datetime
+    updated_at: datetime
     
     class config: #adapte to Pydantic
         from_attribute = True
